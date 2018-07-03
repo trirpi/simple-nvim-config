@@ -26,15 +26,24 @@
 
 	mv init.vim ~/.config/nvim/init.vim
 
-5. Install vim-plug for Neovim
+5. Created directory for persistent undo
+
+	mkdir ~/.config/nvim/undodir
+
+6. Install vim-plug for Neovim
 
 	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 Refer to https://github.com/junegunn/vim-plug for more information
 
-6. Install all plugins (Open NVim)
+7. Install all plugins (Open NVim)
 
 	nvim
 
 then type `:PlugInstall`
+
+8. Compile `Youcomplete me`
+
+	cd ~/.config/nvim/plugged/youcompleteme
+	./install.sh
