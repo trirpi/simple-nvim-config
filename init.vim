@@ -1,19 +1,18 @@
 call plug#begin()
-Plug 'tpope/vim-sensible'
-Plug 'ayu-theme/ayu-vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'sheerun/vim-polyglot'
-Plug 'joshdick/onedark.vim'
-Plug 'valloric/youcompleteme'
-Plug 'nvie/vim-flake8'
-Plug 'vim-syntastic/syntastic'
-Plug 'kien/ctrlp.vim'
-Plug 'raimondi/delimitmate'
-Plug 'vimjas/vim-python-pep8-indent'
+Plug 'tpope/vim-sensible' " sets some normal standards
+Plug 'vim-airline/vim-airline' " status bar
+Plug 'vim-airline/vim-airline-themes' "status bar theme
+Plug 'sheerun/vim-polyglot' " language packs
+Plug 'joshdick/onedark.vim' " color theme
+Plug 'valloric/youcompleteme' " autoclompletion
+Plug 'nvie/vim-flake8' " python syntax and style checker
+Plug 'vim-syntastic/syntastic' " syntax checkings
+Plug 'ctrlpvim/ctrlp.vim' " file finder
+Plug 'raimondi/delimitmate' " auto closing brackets/quotes/...
+Plug 'vimjas/vim-python-pep8-indent' " python indentation
 call plug#end()
 
-"python with virtualenv support
+" python with virtualenv support
 py << EOF
 import os
 import sys
@@ -29,6 +28,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set termguicolors
 colorscheme onedark
 
+" settings for the airline status bar
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='tomorrow'
@@ -52,7 +52,7 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 " all extra windows pop up at the bottom
 set splitbelow
 
-
+" set python directories
 let g:python_host_prog = '/usr/bin/python2.7'
 let g:python3_host_prog = '/usr/bin/python3'
 
