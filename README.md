@@ -12,7 +12,7 @@
 
 1. Install NVim
 ```
-$ sudo apt install nvim
+$ sudo apt install nvim latexmk texlive-latex-extra
 ```
 2. Clone repository
 ```

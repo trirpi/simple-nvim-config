@@ -10,6 +10,7 @@ Plug 'vim-syntastic/syntastic' " syntax checkings
 Plug 'ctrlpvim/ctrlp.vim' " file finder
 Plug 'raimondi/delimitmate' " auto closing brackets/quotes/...
 Plug 'vimjas/vim-python-pep8-indent' " python indentation
+Plug 'lervag/vimtex' " tex support
 call plug#end()
 
 " python with virtualenv support
@@ -59,6 +60,9 @@ let g:python3_host_prog = '/usr/bin/python3'
 " persistent undo
 set undodir=~/.config/nvim/undodir
 set undofile
+
+" disable latex-box included with vim-polyglot (conflicts with vimtex)
+let g:polyglot_disabled = ['latex']
 
 " set tab as 4 spaces
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
