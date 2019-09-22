@@ -7,6 +7,7 @@
 * persistent undo without ugly files
 * line numbers
 * simple plug-vim plugin manager
+* LaTex live preview using :LLPStartPreview
 
 ## Installation (Ubuntu 18.04)
 

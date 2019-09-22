@@ -11,6 +11,7 @@ Plug 'ctrlpvim/ctrlp.vim' " file finder
 Plug 'raimondi/delimitmate' " auto closing brackets/quotes/...
 Plug 'vimjas/vim-python-pep8-indent' " python indentation
 Plug 'lervag/vimtex' " tex support
+Plug 'xudev/vim-latex-live-preview', { 'for: 'tex' } " live preview latex files with :LLPStartPreview
 call plug#end()
 
 " python with virtualenv support
