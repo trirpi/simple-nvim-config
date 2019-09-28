@@ -1,8 +1,8 @@
-# simple-nvim-config
+# Simple NeoVim configuration
 
 ## Features
 
-* beautifull airline status bar
+* beautiful airline status bar
 * modern colorscheme
 * persistent undo without ugly files
 * line numbers
@@ -11,9 +11,9 @@
 
 ## Installation (Ubuntu 18.04)
 
-1. Install NVim
+1. Install NeoVim
 ```
-$ sudo apt install nvim latexmk texlive-latex-extra
+$ sudo apt install neovim latexmk texlive-latex-extra
 ```
 2. Clone repository
 ```
@@ -38,7 +38,7 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 Refer to https://github.com/junegunn/vim-plug for more information
 
-7. Install all plugins (Open NVim)
+7. Install all plugins (Open NeoVim)
 ```
 $ nvim
 ```
