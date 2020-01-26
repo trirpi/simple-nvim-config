@@ -44,8 +44,10 @@ $ nvim
 ```
 then type `:PlugInstall`
 
-8. Compile `Youcomplete me`
+8. Compile `Youcomplete me`. You need `build-essential cmake python3-dev` installed for this.
 ```
 $ cd ~/.config/nvim/plugged/youcompleteme
-$ ./install.sh
+$ ./install.py
 ```
+
+That's it! You're ready!
